@@ -1,0 +1,22 @@
+.page {
+  background-color: #FFFFFF;
+  color: #FFFFFF;
+  font-family: 'Noto Sans', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  position: relative;
+  margin: 0 auto;
+  letter-spacing: -0.5px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+.content {
+  color: #000000;
+  max-width: 1240px;
+  margin: 0 auto;
+}

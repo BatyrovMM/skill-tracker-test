@@ -1,0 +1,351 @@
+.settings {
+  margin: 50px 0 0;
+}
+
+.settings__title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 28px;
+}
+
+.settings__table {
+  display: flex;
+  margin: 40px 0 0;
+  position: relative;
+}
+
+/* Аватар */
+.settings__change {
+  margin: 0 0 75px;
+}
+
+.settings__user-avatar {
+  width: 142px;
+  height: 142px;
+  border-radius: 50%;
+}
+
+.settings__change-avatar {
+  font-size: 15px;
+  line-height: 32px;
+  margin: 10px 0 0;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* Информация */
+.settings__change-info {
+  margin: 0 30px 0 40px;
+  display: flex;
+}
+
+.settings__user-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.settings__user-info {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.settings__disable-mail-table {
+  margin: 50px 0;
+}
+
+.settings__disable-mail-caption {
+  font-size: 18px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.settings__disable-mail-toggle {
+  appearance: none;
+  position: relative;
+  display: inline-flex;
+  margin: 0 0 0 30px;
+  width: 46px;
+  height: 20px;
+  background-color: #DFE2E6;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.settings__disable-mail-toggle::before {
+  content: '';
+  position: absolute;
+  align-self: center;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-color: #FF981F;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  transition: .3s linear;
+}
+
+.settings__disable-mail-toggle:checked::before {
+  content: '';
+  position: absolute;
+  align-self: center;
+  left: 50%;
+  background-color: #80C02F;
+  transition: .3s linear;
+}
+.settings__user-delete {
+  display: block;
+  font-size: 18px;
+  line-height: 32px;
+  text-decoration-line: underline;
+  color: #000000;
+  cursor: pointer;
+}
+
+/* Кнопки */
+.settings__buttons {
+  display: flex;
+}
+
+.settings__buttons_mobile {
+  display: none;
+}
+
+.settings__button {
+  width: 190px;
+  background-color: #80C02F;
+  border-radius: 25px;
+  display: flex;
+  color: #FFFFFF;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 15px;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.settings__button:first-of-type {
+  margin: 0 20px 0 30px;
+}
+
+.settings__button-icon {
+  width: 19px;
+  height: 19px;
+  margin: 0 5px 0 0;
+}
+
+/* Круг и прогресбар */
+.settings__progress {
+  display: flex;
+  min-width: 190px;
+  flex-direction: column;
+  position: absolute;
+  top: -75px;
+  right: 0;
+}
+
+.settings__progress-title {
+  width: 185px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  position: absolute;
+  top: -300px;
+  left: 0;
+}
+
+.settings__progress-title_mobile {
+  display: none;
+}
+
+.settings__circle-progressbar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 40px;
+}
+
+.settings__progress-circle {
+  width: 190px;
+  height: 190px;
+}
+
+.settings__progressbar-table {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.settings__progress-name {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.settings__progress-box {
+  display: flex;
+  align-items: center;
+  margin: 5px 0 0;
+}
+
+.settings__progressbar {
+  width: 140px;
+  height: 10px;
+  background-color: #FFFFFF;
+  border: 1px solid #C4C4C4;
+}
+
+.settings__progressbar-percent {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0 0 0 15px;
+}
+
+@media screen and (max-width: 1244px) {
+  .settings__title {
+    margin: 0 15px;
+  }
+
+  .settings__table {
+    flex-wrap: wrap;
+    margin: 30px 15px 0;
+  }
+
+  .settings__change {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .settings__change-info {
+    width: 100%;
+    margin: 0;
+    order: 1;
+  }
+
+  .settings__buttons {
+    flex-direction: column;
+    margin: 0 0 0 auto;
+  }
+
+  .settings__button:first-of-type {
+    margin: 0 0 20px;
+  }
+
+  .settings__progress {
+    width: calc(100% - 292px);
+    position: unset;
+    flex-direction: unset;
+    top: unset;
+    right: unset;
+    margin: 0 0 0 150px;
+    align-items: end;
+  }
+
+  .settings__progress-title {
+    position: unset;
+    width: 190px;
+    margin: 0 0 20px 0;
+  }
+
+  .settings__progressbar-table {
+    order: -1;
+  }
+
+  .settings__circle-progressbar {
+    margin: 0 0 0 auto;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .settings__title {
+    font-size: 28px;
+    line-height: 28px;
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .settings__progress-title_mobile {
+    display: flex;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .settings__progress-title_pc {
+    display: none;
+  }
+
+  .settings__table {
+    flex-direction: column;
+    margin: 30px 10px 0;
+    align-items: center;
+  }
+
+  .settings__change-info {
+    margin: 30px 0 0;
+  }
+
+  .settings__change-info-table {
+    width: 100%;
+  }
+
+  .settings__buttons_pc {
+    display: none;
+  }
+
+  .settings__button {
+    font-size: 13px;
+    line-height: 15px;
+    padding: 6px 22px;
+  }
+  
+  .settings__buttons_mobile {
+    display: flex;
+    margin: 35px auto;
+    align-items: center;
+  }
+  
+  .settings__disable-mail-toggle {
+    margin: 0 0 0 auto;
+  }
+
+  .settings__progress {
+    margin: 0;
+    width: 100%;
+  }
+
+  .settings__progressbar-table {
+    order: unset;
+    max-width: 150px;
+    margin: 0 0 0 15px;
+  }
+  
+  .settings__circle-progressbar {
+    margin: 0;
+    align-self: center;
+  }
+  
+  .settings__progress-circle {
+    width: 130px;
+    height: 130px;
+  }
+
+  .circle {
+    transform: scale(.7);
+  }
+
+  .settings__progress-name {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .settings__progressbar-line:nth-of-type(2) {
+    margin: 25px 0;
+  }
+}
